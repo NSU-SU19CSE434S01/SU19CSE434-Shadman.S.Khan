@@ -1,4 +1,4 @@
-#container{
+.container{
 
 	width: 65%;
  	padding: 10px;
@@ -14,10 +14,11 @@ h1{
 hr{
 	border: 2px solid black;
 }
-#text{
+.text{
 	text-align: left;
 	font-size: 20;
 }
-img{
-	align-content: right;
+#align{
+	text-align: left;
 }
+
