@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="78.0" layoutY="93.0" text="Name" />
+      <Label layoutX="78.0" layoutY="123.0" text="Address" />
+      <Label layoutX="78.0" layoutY="153.0" text="Telephone" />
+      <Label layoutX="78.0" layoutY="183.0" text="Email" />
+      <Label layoutX="78.0" layoutY="213.0" text="Nationality" />
+      <Label layoutX="78.0" layoutY="243.0" text="Sex" />
+      <Label layoutX="78.0" layoutY="273.0" text="Marital Status" />
+      <Label layoutX="78.0" layoutY="303.0" text="Date Od Birth" />
+      <Label layoutX="78.0" layoutY="333.0" text="Place Of Birth" />
+   </children>
+</AnchorPane>
