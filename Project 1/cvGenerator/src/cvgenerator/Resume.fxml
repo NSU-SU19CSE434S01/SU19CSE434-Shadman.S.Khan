@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
@@ -15,5 +16,14 @@
       <Label layoutX="78.0" layoutY="273.0" text="Marital Status" />
       <Label layoutX="78.0" layoutY="303.0" text="Date Od Birth" />
       <Label layoutX="78.0" layoutY="333.0" text="Place Of Birth" />
+      <TextField layoutX="160.0" layoutY="93.0" prefHeight="25.0" prefWidth="371.0" />
+      <TextField layoutX="160.0" layoutY="123.0" prefHeight="25.0" prefWidth="629.0" />
+      <TextField layoutX="160.0" layoutY="153.0" prefHeight="25.0" prefWidth="193.0" />
+      <TextField layoutX="160.0" layoutY="183.0" prefHeight="25.0" prefWidth="371.0" />
+      <TextField layoutX="160.0" layoutY="213.0" prefHeight="25.0" prefWidth="284.0" />
+      <TextField layoutX="160.0" layoutY="243.0" />
+      <TextField layoutX="160.0" layoutY="273.0" />
+      <TextField layoutX="160.0" layoutY="303.0" prefHeight="25.0" prefWidth="159.0" />
+      <TextField layoutX="160.0" layoutY="333.0" prefHeight="25.0" prefWidth="186.0" />
    </children>
 </AnchorPane>
