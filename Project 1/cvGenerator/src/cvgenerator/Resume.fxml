@@ -16,14 +16,14 @@
       <Label layoutX="78.0" layoutY="273.0" text="Marital Status" />
       <Label layoutX="78.0" layoutY="303.0" text="Date Od Birth" />
       <Label layoutX="78.0" layoutY="333.0" text="Place Of Birth" />
-      <TextField layoutX="160.0" layoutY="93.0" prefHeight="25.0" prefWidth="371.0" />
-      <TextField layoutX="160.0" layoutY="123.0" prefHeight="25.0" prefWidth="629.0" />
-      <TextField layoutX="160.0" layoutY="153.0" prefHeight="25.0" prefWidth="193.0" />
-      <TextField layoutX="160.0" layoutY="183.0" prefHeight="25.0" prefWidth="371.0" />
-      <TextField layoutX="160.0" layoutY="213.0" prefHeight="25.0" prefWidth="284.0" />
-      <TextField layoutX="160.0" layoutY="243.0" />
-      <TextField layoutX="160.0" layoutY="273.0" />
-      <TextField layoutX="160.0" layoutY="303.0" prefHeight="25.0" prefWidth="159.0" />
-      <TextField layoutX="160.0" layoutY="333.0" prefHeight="25.0" prefWidth="186.0" />
+      <TextField fx:id="NameInput" layoutX="160.0" layoutY="93.0" prefHeight="25.0" prefWidth="371.0" promptText="Enter Your Name" />
+      <TextField fx:id="AddressInput" layoutX="160.0" layoutY="123.0" prefHeight="25.0" prefWidth="629.0" promptText="Enter Your Address" />
+      <TextField fx:id="TelephoneInput" layoutX="160.0" layoutY="153.0" prefHeight="25.0" prefWidth="193.0" promptText="Enter your Phone Number" />
+      <TextField fx:id="EmailInput" layoutX="160.0" layoutY="183.0" prefHeight="25.0" prefWidth="371.0" promptText="Enter Your Email" />
+      <TextField fx:id="NationalityInput" layoutX="160.0" layoutY="213.0" prefHeight="25.0" prefWidth="284.0" promptText="Enter Your Nationality" />
+      <TextField fx:id="GenderInput" layoutX="160.0" layoutY="243.0" promptText="Enter Your Gender" />
+      <TextField fx:id="MaritalStatusInput" layoutX="160.0" layoutY="273.0" />
+      <TextField fx:id="DobInput" layoutX="160.0" layoutY="303.0" prefHeight="25.0" prefWidth="159.0" />
+      <TextField fx:id="PobInput" layoutX="160.0" layoutY="333.0" prefHeight="25.0" prefWidth="186.0" />
    </children>
 </AnchorPane>
