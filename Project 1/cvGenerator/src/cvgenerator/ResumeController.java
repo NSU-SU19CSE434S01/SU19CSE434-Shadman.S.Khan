@@ -10,7 +10,9 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  *
@@ -18,10 +20,28 @@ import javafx.scene.control.Label;
  */
 public class ResumeController implements Initializable {
     
-    @FXML
     private Label label;
-    
     @FXML
+    private TextField NameInput;
+    @FXML
+    private TextField AddressInput;
+    @FXML
+    private TextField TelephoneInput;
+    @FXML
+    private TextField EmailInput;
+    @FXML
+    private TextField NationalityInput;
+    @FXML
+    private TextField GenderInput;
+    @FXML
+    private TextField MaritalStatusInput;
+    @FXML
+    private TextField DobInput;
+    @FXML
+    private TextField PobInput;
+    @FXML
+    private Button SubmitButton;
+    
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
@@ -31,5 +51,9 @@ public class ResumeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void SubmitResume(ActionEvent event) {
+    }
     
 }
