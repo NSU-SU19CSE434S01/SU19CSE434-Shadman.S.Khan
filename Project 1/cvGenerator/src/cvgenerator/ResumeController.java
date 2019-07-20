@@ -5,6 +5,7 @@
  */
 package cvgenerator;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -57,19 +58,12 @@ public class ResumeController implements Initializable {
     @FXML
     private void SubmitResume(ActionEvent event) {
         
-        //https://javarevisited.blogspot.com/2014/09/how-to-parse-html-file-in-java-jsoup-example.html
-        try {
-            Document doc = Jsoup.parse("<html></html>");
-            doc.body().addClass("body-styles-cls");
-            doc.body().appendElement("div");
-            System.out.println(doc.toString());
-        
-            
-            
-            
-        } catch (IOException ex) {
-            Logger.getLogger(Resume2Controller.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Document doc = Jsoup.parse("<html></html>");
+        doc.body().addClass("body-styles-cls");
+        doc.body().appendElement("div");
+        System.out.println(doc.toString());
+        File htmlTemplateFile = new File("SampleCV/CV.html");
+        System.out.println(htmlTemplateFile.exists());
     }
     
 }
