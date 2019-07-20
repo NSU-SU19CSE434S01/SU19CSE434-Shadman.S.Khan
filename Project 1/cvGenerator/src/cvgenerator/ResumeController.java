@@ -39,7 +39,7 @@ public class ResumeController implements Initializable {
     @FXML
     private TextField NationalityInput;
     @FXML
-    private TextField GenderInput;
+    private TextField SexInput;
     @FXML
     private TextField MaritalStatusInput;
     @FXML
@@ -48,6 +48,7 @@ public class ResumeController implements Initializable {
     private TextField PobInput;
     @FXML
     private Button SubmitButton;
+ 
     
     
     
@@ -70,6 +71,14 @@ public class ResumeController implements Initializable {
             System.out.println(htmlTemplateFile.exists());
             String htmlString = FileUtils.readFileToString(htmlTemplateFile);
             htmlString = htmlString.replace("$name", NameInput.getText());
+            htmlString = htmlString.replace("$address", AddressInput.getText());
+            htmlString = htmlString.replace("$telephone", TelephoneInput.getText());
+            htmlString = htmlString.replace("$email", EmailInput.getText());
+            htmlString = htmlString.replace("$nationality", NationalityInput.getText());
+            htmlString = htmlString.replace("$sex", SexInput.getText());
+            htmlString = htmlString.replace("$maritalStatus", MaritalStatusInput.getText());
+            htmlString = htmlString.replace("$dob", DobInput.getText());
+            htmlString = htmlString.replace("$pob", PobInput.getText());
             
             File newHtmlFile = new File("CvCollection/"+NameInput.getText()+"CV.html");
             FileUtils.writeStringToFile(newHtmlFile, htmlString);
