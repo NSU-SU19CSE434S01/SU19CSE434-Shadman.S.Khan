@@ -5,14 +5,19 @@
  */
 package cvgenerator;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 /**
  *
@@ -42,10 +47,7 @@ public class ResumeController implements Initializable {
     @FXML
     private Button SubmitButton;
     
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -54,6 +56,20 @@ public class ResumeController implements Initializable {
 
     @FXML
     private void SubmitResume(ActionEvent event) {
+        
+        //https://javarevisited.blogspot.com/2014/09/how-to-parse-html-file-in-java-jsoup-example.html
+        try {
+            Document doc = Jsoup.parse("<html></html>");
+            doc.body().addClass("body-styles-cls");
+            doc.body().appendElement("div");
+            System.out.println(doc.toString());
+        
+            
+            
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Resume2Controller.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }
