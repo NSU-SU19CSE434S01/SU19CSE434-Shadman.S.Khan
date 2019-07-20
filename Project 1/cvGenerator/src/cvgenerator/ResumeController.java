@@ -17,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -58,12 +59,25 @@ public class ResumeController implements Initializable {
     @FXML
     private void SubmitResume(ActionEvent event) {
         
-        Document doc = Jsoup.parse("<html></html>");
-        doc.body().addClass("body-styles-cls");
-        doc.body().appendElement("div");
-        System.out.println(doc.toString());
-        File htmlTemplateFile = new File("SampleCV/CV.html");
-        System.out.println(htmlTemplateFile.exists());
+        //https://javarevisited.blogspot.com/2014/09/how-to-parse-html-file-in-java-jsoup-example.html
+        try {
+            Document doc = Jsoup.parse("<html></html>");
+            doc.body().addClass("body-styles-cls");
+            doc.body().appendElement("div");
+            System.out.println(doc.toString());
+        
+            File htmlTemplateFile = new File("SampleCV/CV.html");
+            System.out.println(htmlTemplateFile.exists());
+            String htmlString = FileUtils.readFileToString(htmlTemplateFile);
+            htmlString = htmlString.replace("$name", NameInput.getText());
+            
+            File newHtmlFile = new File("CvCollection/"+NameInput.getText()+"CV.html");
+            FileUtils.writeStringToFile(newHtmlFile, htmlString);
+            
+            
+        } catch (IOException ex) {
+            Logger.getLogger(ResumeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }
