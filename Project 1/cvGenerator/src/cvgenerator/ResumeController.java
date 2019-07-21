@@ -7,6 +7,8 @@ package cvgenerator;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -95,6 +97,16 @@ public class ResumeController implements Initializable {
 
     @FXML
     private void ImageUploader(ActionEvent event) {
+        
+        
+        
+    }
+    
+    private static void copyFileUsingStream(File source, File dest){
+        
+        InputStream is = null;
+        OutputStream os = null;
+        
     }
     
 }
