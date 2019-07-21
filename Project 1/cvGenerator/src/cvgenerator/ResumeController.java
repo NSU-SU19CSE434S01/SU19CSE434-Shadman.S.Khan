@@ -92,5 +92,9 @@ public class ResumeController implements Initializable {
             Logger.getLogger(ResumeController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
+    @FXML
+    private void ImageUploader(ActionEvent event) {
+    }
     
 }
