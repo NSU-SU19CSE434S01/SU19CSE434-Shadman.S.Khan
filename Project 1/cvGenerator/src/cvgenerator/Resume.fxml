@@ -31,5 +31,8 @@
             <Font size="41.0" />
          </font>
       </Button>
+      <Label layoutX="78.0" layoutY="382.0" />
+      <TextField fx:id="ImageInput" layoutX="629.0" layoutY="303.0" prefHeight="25.0" prefWidth="247.0" promptText="Upload Image" />
+      <Button fx:id="ImageUpload" alignment="TOP_CENTER" layoutX="895.0" layoutY="303.0" mnemonicParsing="false" onAction="#SubmitResume" prefHeight="25.0" prefWidth="106.0" text="Choose Image" />
    </children>
 </AnchorPane>

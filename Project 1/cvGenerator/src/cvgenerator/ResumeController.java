@@ -48,6 +48,10 @@ public class ResumeController implements Initializable {
     private TextField PobInput;
     @FXML
     private Button SubmitButton;
+    @FXML
+    private TextField ImageInput;
+    @FXML
+    private Button ImageUpload;
  
     
     
