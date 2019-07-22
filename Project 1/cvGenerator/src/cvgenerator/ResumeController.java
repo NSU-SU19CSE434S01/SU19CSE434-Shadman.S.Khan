@@ -75,6 +75,10 @@ public class ResumeController implements Initializable {
             doc.body().addClass("body-styles-cls");
             doc.body().appendElement("div");
             System.out.println(doc.toString());
+            
+            File imageSrc= new File(ImageInput.getText());
+            File imageDst= new File("CvCollection/"+NameInput.getText()+"CV.jpg");
+            copyFileUsingStream(imageSrc,imageDst);
         
             File htmlTemplateFile = new File("SampleCV/CV.html");
             System.out.println(htmlTemplateFile.exists());
