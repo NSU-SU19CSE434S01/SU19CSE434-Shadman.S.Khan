@@ -21,6 +21,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -100,7 +101,14 @@ public class ResumeController implements Initializable {
     @FXML
     private void ImageUploader(ActionEvent event) {
         
+        FileChooser fc= new FileChooser();
+        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image Files", "*.jpg"));
+        File f = fc.showOpenDialog(null);
         
+        if(f!= null)
+        {
+            ImageInput.setText(f.getAbsolutePath());
+        }
         
     }
      //https://examples.javacodegeeks.com/core-java/io/file/4-ways-to-copy-file-in-java/ 
