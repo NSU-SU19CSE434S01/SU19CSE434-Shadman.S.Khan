@@ -92,6 +92,7 @@ public class ResumeController implements Initializable {
             htmlString = htmlString.replace("$maritalStatus", MaritalStatusInput.getText());
             htmlString = htmlString.replace("$dob", DobInput.getText());
             htmlString = htmlString.replace("$pob", PobInput.getText());
+            htmlString = htmlString.replace("$image", imageDst.getName());
             
             File newHtmlFile = new File("CvCollection/"+NameInput.getText()+"CV.html");
             FileUtils.writeStringToFile(newHtmlFile, htmlString);
