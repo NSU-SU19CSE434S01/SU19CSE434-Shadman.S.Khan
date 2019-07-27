@@ -22,6 +22,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
@@ -63,7 +64,7 @@ public class ResumeController implements Initializable {
     @FXML
     private Button ImageUpload;
     @FXML
-    private ChoiceBox PrimaryChooser;
+    private ComboBox PrimaryChooser;
  
     
     
