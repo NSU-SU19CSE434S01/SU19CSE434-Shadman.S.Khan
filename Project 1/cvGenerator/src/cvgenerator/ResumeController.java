@@ -36,7 +36,6 @@ import org.jsoup.nodes.Document;
  */
 public class ResumeController implements Initializable {
     
-    ObservableList<String> primaryEducationList = FXCollections.observableArrayList("SSC", "O-levels");
     
     private Label label;
     @FXML
@@ -51,7 +50,6 @@ public class ResumeController implements Initializable {
     private TextField NationalityInput;
     @FXML
     private TextField SexInput;
-    @FXML
     private TextField MaritalStatusInput;
     @FXML
     private TextField DobInput;
@@ -64,7 +62,17 @@ public class ResumeController implements Initializable {
     @FXML
     private Button ImageUpload;
     @FXML
-    private ComboBox PrimaryChooser;
+    private TextField School;
+    @FXML
+    private TextField SSC;
+    @FXML
+    private TextField SSCYear;
+    @FXML
+    private TextField HSC;
+    @FXML
+    private TextField HSCYear;
+    @FXML
+    private TextField College;
  
     
     
@@ -75,13 +83,6 @@ public class ResumeController implements Initializable {
        
     }    
 
-    @FXML
-    private void initialize(){
-        
-        PrimaryChooser.setValue("SSC");
-        PrimaryChooser.setItems(primaryEducationList);
-        
-    }
     
     @FXML
     private void SubmitResume(ActionEvent event) {
@@ -110,6 +111,13 @@ public class ResumeController implements Initializable {
             htmlString = htmlString.replace("$dob", DobInput.getText());
             htmlString = htmlString.replace("$pob", PobInput.getText());
             htmlString = htmlString.replace("$image", imageDst.getName());
+            htmlString = htmlString.replace("$SSC", SSC.getText());
+            htmlString = htmlString.replace("$primary", School.getText());
+            htmlString = htmlString.replace("$SSCYear", SSCYear.getText());
+            htmlString = htmlString.replace("$HSC", HSC.getText());
+            htmlString = htmlString.replace("$secondary", College.getText());
+            htmlString = htmlString.replace("$HSCYear", HSCYear.getText());
+            
             
             File newHtmlFile = new File("CvCollection/"+NameInput.getText()+"CV.html");
             FileUtils.writeStringToFile(newHtmlFile, htmlString);

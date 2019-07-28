@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -24,7 +23,7 @@
       <TextField fx:id="EmailInput" layoutX="160.0" layoutY="183.0" prefHeight="25.0" prefWidth="371.0" promptText="Enter Your Email" />
       <TextField fx:id="NationalityInput" layoutX="160.0" layoutY="213.0" prefHeight="25.0" prefWidth="284.0" promptText="Enter Your Nationality" />
       <TextField fx:id="SexInput" layoutX="160.0" layoutY="243.0" promptText="Enter Your Gender" />
-      <TextField fx:id="MaritalStatusInput" layoutX="160.0" layoutY="273.0" />
+      <TextField fx:id="School" layoutX="486.0" layoutY="427.0" prefHeight="25.0" prefWidth="428.0" promptText="Institution" />
       <TextField fx:id="DobInput" layoutX="160.0" layoutY="303.0" prefHeight="25.0" prefWidth="159.0" />
       <TextField fx:id="PobInput" layoutX="160.0" layoutY="333.0" prefHeight="25.0" prefWidth="186.0" />
       <Button fx:id="SubmitButton" alignment="CENTER" layoutX="429.0" layoutY="605.0" mnemonicParsing="false" onAction="#SubmitResume" prefHeight="118.0" prefWidth="205.0" text="Submit">
@@ -33,11 +32,14 @@
          </font>
       </Button>
       <Label layoutX="78.0" layoutY="382.0" />
-      <TextField fx:id="ImageInput" layoutX="629.0" layoutY="303.0" onAction="#ImageUploader" prefHeight="25.0" prefWidth="247.0" promptText="Upload Image" />
-      <Button fx:id="ImageUpload" alignment="TOP_CENTER" layoutX="895.0" layoutY="303.0" mnemonicParsing="false" onAction="#SubmitResume" prefHeight="25.0" prefWidth="106.0" text="Choose Image" />
-      <Label layoutX="78.0" layoutY="423.0" text="Place Of Birth" />
-      <Label layoutX="78.0" layoutY="374.0" text="SSC/O-Level" />
-      <Label layoutX="78.0" layoutY="452.0" text="Place Of Birth" />
-      <ComboBox fx:id="PrimaryChooser" layoutX="160.0" layoutY="370.0" onMouseClicked="#initialize" prefHeight="25.0" prefWidth="214.0" promptText="Choose your Education medium" />
+      <TextField fx:id="ImageInput" layoutX="418.0" layoutY="333.0" onAction="#ImageUploader" prefHeight="25.0" prefWidth="247.0" promptText="Upload Image" />
+      <Button fx:id="ImageUpload" alignment="TOP_CENTER" layoutX="683.0" layoutY="333.0" mnemonicParsing="false" onAction="#SubmitResume" prefHeight="25.0" prefWidth="106.0" text="Choose Image" />
+      <Label layoutX="77.0" layoutY="460.0" text="Higher Secondary" />
+      <Label layoutX="77.0" layoutY="431.0" text="Secondary Education" />
+      <TextField fx:id="SSC" layoutX="197.0" layoutY="427.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Degree Info" />
+      <TextField fx:id="SSCYear" layoutX="386.0" layoutY="427.0" prefHeight="25.0" prefWidth="87.0" promptText="Passing Year" />
+      <TextField fx:id="HSC" layoutX="197.0" layoutY="456.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Degree Info" />
+      <TextField fx:id="HSCYear" layoutX="386.0" layoutY="456.0" prefHeight="25.0" prefWidth="87.0" promptText="Passing Year" />
+      <TextField fx:id="College" layoutX="486.0" layoutY="456.0" prefHeight="25.0" prefWidth="428.0" promptText="Institution" />
    </children>
 </AnchorPane>
