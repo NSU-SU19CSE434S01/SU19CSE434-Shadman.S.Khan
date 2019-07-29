@@ -32,8 +32,8 @@
          </font>
       </Button>
       <Label layoutX="78.0" layoutY="382.0" />
-      <TextField fx:id="ImageInput" layoutX="418.0" layoutY="333.0" onAction="#ImageUploader" prefHeight="25.0" prefWidth="247.0" promptText="Upload Image" />
-      <Button fx:id="ImageUpload" alignment="TOP_CENTER" layoutX="683.0" layoutY="333.0" mnemonicParsing="false" onAction="#SubmitResume" prefHeight="25.0" prefWidth="106.0" text="Choose Image" />
+      <TextField fx:id="ImageInput" layoutX="418.0" layoutY="333.0" prefHeight="25.0" prefWidth="247.0" promptText="Upload Image" />
+      <Button fx:id="ImageUpload" alignment="TOP_CENTER" layoutX="683.0" layoutY="333.0" mnemonicParsing="false" onAction="#ImageUploader" prefHeight="25.0" prefWidth="106.0" text="Choose Image" />
       <Label layoutX="77.0" layoutY="460.0" text="Higher Secondary" />
       <Label layoutX="77.0" layoutY="431.0" text="Secondary Education" />
       <TextField fx:id="SSC" layoutX="197.0" layoutY="427.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Degree Info" />
@@ -41,5 +41,6 @@
       <TextField fx:id="HSC" layoutX="197.0" layoutY="456.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Degree Info" />
       <TextField fx:id="HSCYear" layoutX="386.0" layoutY="456.0" prefHeight="25.0" prefWidth="87.0" promptText="Passing Year" />
       <TextField fx:id="College" layoutX="486.0" layoutY="456.0" prefHeight="25.0" prefWidth="428.0" promptText="Institution" />
+      <TextField fx:id="MaritalStatusInput" layoutX="160.0" layoutY="269.0" prefHeight="25.0" prefWidth="159.0" />
    </children>
 </AnchorPane>

@@ -50,6 +50,7 @@ public class ResumeController implements Initializable {
     private TextField NationalityInput;
     @FXML
     private TextField SexInput;
+    @FXML
     private TextField MaritalStatusInput;
     @FXML
     private TextField DobInput;
