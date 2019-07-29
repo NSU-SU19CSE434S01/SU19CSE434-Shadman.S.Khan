@@ -23,5 +23,26 @@ public class ResumeControllerTest {
     @Test
     public void testInitialize() {
     }
+
+    /**
+     * Test of SubmitResume method, of class ResumeController.
+     */
+    @Test
+    public void testSubmitResume() {
+    }
+
+    /**
+     * Test of ImageUploader method, of class ResumeController.
+     */
+    @Test
+    public void testImageUploader() {
+    }
+
+    /**
+     * Test of copyFileUsingStream method, of class ResumeController.
+     */
+    @Test
+    public void testCopyFileUsingStream() throws Exception {
+    }
     
 }

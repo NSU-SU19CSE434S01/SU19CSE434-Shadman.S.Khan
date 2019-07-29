@@ -86,7 +86,7 @@ public class ResumeController implements Initializable {
 
     
     @FXML
-    private void SubmitResume(ActionEvent event) {
+    public void SubmitResume(ActionEvent event) {
         
         //https://javarevisited.blogspot.com/2014/09/how-to-parse-html-file-in-java-jsoup-example.html
         try {
@@ -130,7 +130,7 @@ public class ResumeController implements Initializable {
     }
 
     @FXML
-    private void ImageUploader(ActionEvent event) {
+    public void ImageUploader(ActionEvent event) {
         
         FileChooser fc= new FileChooser();
         fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image Files", "*.jpg"));
@@ -143,7 +143,7 @@ public class ResumeController implements Initializable {
         
     }
      //https://examples.javacodegeeks.com/core-java/io/file/4-ways-to-copy-file-in-java/ 
-    private static void copyFileUsingStream(File source, File dest) throws IOException {
+    public void copyFileUsingStream(File source, File dest) throws IOException {
     InputStream is = null;
     OutputStream os = null;
     try {
