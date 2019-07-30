@@ -187,5 +187,19 @@ public class ResumeController implements Initializable {
         os.close();
     }
 }
-    
+   public void validatedName(String name){
+       
+       char[] nameToArray= name.toCharArray();
+       if(name.isEmpty()){
+           ErrorBox.setText("Name cannot be Empty");
+       }
+       else{
+           for(char c : nameToArray){
+               if(Character.isDigit(c)){
+                   ErrorBox.setText("Invalid Name Input Detected");
+                   NameInput.setText("      ");
+               }
+           }
+       }
+   } 
 }
