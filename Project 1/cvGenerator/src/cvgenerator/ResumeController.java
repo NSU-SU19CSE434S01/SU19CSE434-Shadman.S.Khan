@@ -74,6 +74,22 @@ public class ResumeController implements Initializable {
     private TextField HSCYear;
     @FXML
     private TextField College;
+    @FXML
+    private TextField Undergrad;
+    @FXML
+    private TextField HonoursMajor;
+    @FXML
+    private TextField HCGPA;
+    @FXML
+    private TextField HInstitute;
+    @FXML
+    private TextField postGrad;
+    @FXML
+    private TextField MastersMajor;
+    @FXML
+    private TextField MCGPA;
+    @FXML
+    private TextField MInstitute;
  
     
     
@@ -118,6 +134,16 @@ public class ResumeController implements Initializable {
             htmlString = htmlString.replace("$HSC", HSC.getText());
             htmlString = htmlString.replace("$secondary", College.getText());
             htmlString = htmlString.replace("$HSCYear", HSCYear.getText());
+            htmlString = htmlString.replace("$HONOURS", Undergrad.getText());
+            htmlString = htmlString.replace("$undergrad", HonoursMajor.getText());
+            htmlString = htmlString.replace("$HCGPA", HCGPA.getText());
+            htmlString = htmlString.replace("$hinstitute", HInstitute.getText());
+            htmlString = htmlString.replace("$MASTERS", postGrad.getText());
+            htmlString = htmlString.replace("$postgrad", MastersMajor.getText());
+            htmlString = htmlString.replace("$MCGPA", MCGPA.getText());
+            htmlString = htmlString.replace("$minstitute", MInstitute.getText());
+            
+            
             
             
             File newHtmlFile = new File("CvCollection/"+NameInput.getText()+"CV.html");

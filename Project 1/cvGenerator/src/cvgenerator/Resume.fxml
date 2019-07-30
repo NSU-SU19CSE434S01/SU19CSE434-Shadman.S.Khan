@@ -42,5 +42,15 @@
       <TextField fx:id="HSCYear" layoutX="386.0" layoutY="456.0" prefHeight="25.0" prefWidth="87.0" promptText="Passing Year" />
       <TextField fx:id="College" layoutX="486.0" layoutY="456.0" prefHeight="25.0" prefWidth="428.0" promptText="Institution" />
       <TextField fx:id="MaritalStatusInput" layoutX="160.0" layoutY="269.0" prefHeight="25.0" prefWidth="159.0" />
+      <Label layoutX="77.0" layoutY="494.0" text="Honours" />
+      <TextField fx:id="Undergrad" layoutX="197.0" layoutY="490.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Degree Info" />
+      <TextField fx:id="HonoursMajor" layoutX="386.0" layoutY="490.0" prefHeight="25.0" prefWidth="87.0" promptText="Enter Major" />
+      <TextField fx:id="HCGPA" layoutX="486.0" layoutY="490.0" prefHeight="25.0" prefWidth="141.0" promptText="Enter CGPA" />
+      <TextField fx:id="HInstitute" layoutX="634.0" layoutY="490.0" prefHeight="25.0" prefWidth="284.0" promptText="Institution" />
+      <Label layoutX="77.0" layoutY="525.0" text="Masters" />
+      <TextField fx:id="postGrad" layoutX="197.0" layoutY="521.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Degree Info" />
+      <TextField fx:id="MastersMajor" layoutX="386.0" layoutY="521.0" prefHeight="25.0" prefWidth="87.0" promptText="Enter Major" />
+      <TextField fx:id="MCGPA" layoutX="486.0" layoutY="521.0" prefHeight="25.0" prefWidth="141.0" promptText="Enter CGPA" />
+      <TextField fx:id="MInstitute" layoutX="634.0" layoutY="521.0" prefHeight="25.0" prefWidth="284.0" promptText="Institution" />
    </children>
 </AnchorPane>
