@@ -90,6 +90,8 @@ public class ResumeController implements Initializable {
     private TextField MCGPA;
     @FXML
     private TextField MInstitute;
+    @FXML
+    private TextField ErrorBox;
  
     
     

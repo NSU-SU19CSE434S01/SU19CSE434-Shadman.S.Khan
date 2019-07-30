@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cvgenerator.ResumeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="874.0" prefWidth="1107.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cvgenerator.ResumeController">
    <children>
       <Label layoutX="78.0" layoutY="93.0" text="Name" />
       <Label layoutX="78.0" layoutY="123.0" text="Address" />
@@ -26,7 +26,7 @@
       <TextField fx:id="School" layoutX="486.0" layoutY="427.0" prefHeight="25.0" prefWidth="428.0" promptText="Institution" />
       <TextField fx:id="DobInput" layoutX="160.0" layoutY="303.0" prefHeight="25.0" prefWidth="159.0" />
       <TextField fx:id="PobInput" layoutX="160.0" layoutY="333.0" prefHeight="25.0" prefWidth="186.0" />
-      <Button fx:id="SubmitButton" alignment="CENTER" layoutX="429.0" layoutY="605.0" mnemonicParsing="false" onAction="#SubmitResume" prefHeight="118.0" prefWidth="205.0" text="Submit">
+      <Button fx:id="SubmitButton" alignment="CENTER" layoutX="429.0" layoutY="714.0" mnemonicParsing="false" onAction="#SubmitResume" prefHeight="118.0" prefWidth="205.0" text="Submit">
          <font>
             <Font size="41.0" />
          </font>
@@ -52,5 +52,6 @@
       <TextField fx:id="MastersMajor" layoutX="386.0" layoutY="521.0" prefHeight="25.0" prefWidth="87.0" promptText="Enter Major" />
       <TextField fx:id="MCGPA" layoutX="486.0" layoutY="521.0" prefHeight="25.0" prefWidth="141.0" promptText="Enter CGPA" />
       <TextField fx:id="MInstitute" layoutX="634.0" layoutY="521.0" prefHeight="25.0" prefWidth="284.0" promptText="Institution" />
+      <TextField fx:id="ErrorBox" alignment="CENTER" layoutX="228.0" layoutY="638.0" prefHeight="25.0" prefWidth="613.0" />
    </children>
 </AnchorPane>
