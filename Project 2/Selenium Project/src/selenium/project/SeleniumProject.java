@@ -3,14 +3,16 @@ package selenium.project;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 
 
 
-
+@Test
 public class SeleniumProject {
 
     WebDriver driver;
+    
     
     public void OpenSite(){
         
@@ -71,8 +73,7 @@ public class SeleniumProject {
         
      System.setProperty("webdriver.gecko.driver", "F:\\geckodriver.exe");   
      SeleniumProject testOpen = new SeleniumProject();
-     testOpen.bookingTest();
-        
+     
         
         
         
