@@ -59,8 +59,10 @@ public class SeleniumProject {
     
     public void bookingTest(){
         
-        
-        
+        driver = new FirefoxDriver();
+        driver.get("https://www.phptravels.net/");
+        System.out.println(driver.findElement(By.xpath("//div[1]/article[@id='tour-36' and @class='box' and 1]/div[@class='details' and 1]/h4[@class='box-title go-text-right' and 1]/span[1]")).getText());
+        driver.findElement(By.xpath("//a[@class='button btn-small' and @href='https://www.phptravels.net/tours/egypt/alexandria/Spectaculars-Of-The-Nile-3-Nights']")).click();
     }
     
     
@@ -69,7 +71,7 @@ public class SeleniumProject {
         
      System.setProperty("webdriver.gecko.driver", "F:\\geckodriver.exe");   
      SeleniumProject testOpen = new SeleniumProject();
-     testOpen.signUpTest();
+     testOpen.bookingTest();
         
         
         
