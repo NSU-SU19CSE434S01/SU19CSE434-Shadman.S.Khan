@@ -57,6 +57,12 @@ public class SeleniumProject {
         }
     }
     
+    public void bookingTest(){
+        
+        
+        
+    }
+    
     
     public static void main(String[] args) {
         
