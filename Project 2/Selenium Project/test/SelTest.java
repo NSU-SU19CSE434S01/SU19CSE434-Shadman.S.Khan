@@ -32,6 +32,22 @@ public class SelTest {
         driver.findElement(By.xpath("//a[@class='btn btn-primary btn-lg btn-block' and 1]")).click();
         
     }
+    @Test
+    public void signUpTest(){
+        
+        System.setProperty("webdriver.gecko.driver", "F:\\geckodriver.exe");
+        driver = new FirefoxDriver();
+        driver.get("https://www.phptravels.net/register");
+        driver.findElement(By.xpath("//div[3]/input[@class='form-control' and 1]")).sendKeys("Shadman");
+        driver.findElement(By.xpath("//div[4]/input[@class='form-control' and 1]")).sendKeys("S. Khan");
+        driver.findElement(By.xpath("//div[5]/input[@class='form-control' and 1]")).sendKeys("017000000");
+        driver.findElement(By.xpath("//div[6]/input[@class='form-control' and 1]")).sendKeys("shadman@gmail.com");
+        driver.findElement(By.xpath("//div[7]/input[@class='form-control' and 1]")).sendKeys("123456");
+        driver.findElement(By.xpath("//div[8]/input[@class='form-control' and 1]")).sendKeys("123456");
+        driver.findElement(By.xpath("//button[@class='signupbtn btn_full btn btn-action btn-block btn-lg']")).click();
+        
+    }
+    
 
     @BeforeClass
     public static void setUpClass() throws Exception {
