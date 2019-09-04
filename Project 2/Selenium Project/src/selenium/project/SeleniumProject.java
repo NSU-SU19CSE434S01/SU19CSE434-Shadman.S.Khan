@@ -81,6 +81,16 @@ public class SeleniumProject {
     }
     
     
+    public void removeCustomer(){
+        
+        driver = new FirefoxDriver();
+        driver.get("https://www.phptravels.net/admin");
+        driver.findElement(By.xpath("//input[@class='form-control' and @type='text']")).sendKeys("admin@phptravels.com");
+        driver.findElement(By.xpath("//*[@name='password']")).sendKeys("demoadmin");
+        driver.findElement(By.xpath("//*[@class='btn btn-primary btn-block ladda-button fadeIn animated']")).click();
+        driver.get("https://www.phptravels.net/admin/bookings/");
+        driver.findElement(By.xpath("//a[@id='7']")).click();
+    }
     
     
     public static void main(String[] args) {
@@ -88,7 +98,7 @@ public class SeleniumProject {
         
      System.setProperty("webdriver.gecko.driver", "F:\\geckodriver.exe");   
      SeleniumProject testOpen = new SeleniumProject();
-     testOpen.bookingTest();
+     testOpen.removeCustomer();
      
         
         
