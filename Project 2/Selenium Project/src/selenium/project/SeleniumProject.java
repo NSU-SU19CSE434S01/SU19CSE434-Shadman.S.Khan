@@ -45,7 +45,7 @@ public class SeleniumProject {
         driver.findElement(By.xpath("//div[4]/input[@class='form-control' and 1]")).sendKeys("S. Khan");
         driver.findElement(By.xpath("//div[5]/input[@class='form-control' and 1]")).sendKeys("017000000");
         driver.findElement(By.xpath("//div[6]/input[@class='form-control' and 1]")).sendKeys("shadman@gmail.com");
-        driver.findElement(By.xpath("//div[7]/input[@class='form-control' and 1]")).sendKeys("12345");
+        driver.findElement(By.xpath("//div[7]/input[@class='form-control' and 1]")).sendKeys("123456");
         driver.findElement(By.xpath("//div[8]/input[@class='form-control' and 1]")).sendKeys("123456");
         driver.findElement(By.xpath("//button[@class='signupbtn btn_full btn btn-action btn-block btn-lg']")).click();
         
