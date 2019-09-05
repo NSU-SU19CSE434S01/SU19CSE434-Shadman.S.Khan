@@ -1,79 +1,78 @@
-<p align="center">
-<img src="https://github.com/monsurhillas007/SU19CSE299S16G01NSU/blob/master/Mockup/logo/nsulogo.jpeg">
-</p>
-
+<p align="center"></p>
+<img src="https://imgur.com/a/h4QoDx4">
 <div align="center">
 
 
 # North South University </h5>
 ##  Department of Electrical and Computer Engineering </h3>
 
-##  Project Proposal
+##  Project Report
 
-## Project Name : Healthy NSU
+## Project Name : Testing a travel based website using Selenium
 
-**Course:** CSE 299
+**Course:** CSE 434
 
 **Semester:** Summer2019
 
-**Group:** 01
+**Name:** Shadman S. Khan
 
-**Name:** Monsur Hillas
-
-**ID:** 1721911642
+**ID:** 1611918042
 
 **Faculty:** Shaikh Shawon Arefin Shimon(SAS3)
 
-**Section:** 16
+**Section:** 1
 
-**Email:** monsur.hillas@northsouth.edu
+**Email:** shadman.khan@northsouth.edu
 
-**Github Repository:** [SU19CSE299S16G01NSU](https://github.com/monsurhillas007/SU19CSE299S16G01NSU)
+**Github Repository:** [https://github.com/Shadman695/CSE434)
 
-**Date Prepared:** 10/06/2019
+**Date Prepared:** 05/09/2019
 </div>
 
 
 
 **Introduction:**
 
-Healthy NSU is a blogging site which is created with a purpose to build a strong awareness about health problems for this university. This is a website where both students and teachers can ask health related problem without any hesitation, or they can also suggest any solution to a health related problem. As day by day the number of patients in our country is increasing so we want to limit this number as few as we can.  Healthy NSU will be able to help students and teachers to maintain a healthy life and will get them safe from any health related issues.  None the less, this website will only be available to the students of North South University so a clear communication between the university people will be created by this platform.  
-
-
-**Problem statement:**
-
-Bangladesh is a developing country; it is also a country of middle income. But as we are developing we need to pay attention to our people’s health issues.  Many people of Bangladesh do not have the common idea about how to lead a healthy life and maintain their health and this is a big problem for our country as because of awareness we often get sick by various diseases, we cannot create awareness to the whole country at a time, we need to create awareness place by place gradually, so people can understand the important of being healthy and they can maintain a healthy life. And to solve this problem we have come up with a solution to create a blogging website where all kind of health related post will be approved and people can ask any health related questions in that platform, we wanted to combine a specific university peoples into a unique platform that’s why we want to create this blogging website so that people of this community can have a better understanding about their health.
-
-
+Selenium is a testing library through which unit testing of websites can be done. we used selenium to test various features of a website. The website that we tested is a trvael based website that has features like signup, login, search through destinations, book flights, hotels, cars etc. The goal of our project in to generate test cases which are written in Java and use selenium API to test them on website.
 
 
 
 **Project Idea:**
 
-The main idea of this project is to build a website where various kinds of health related posts can be given. At first there will be two type of users i) one who can only see post and comment suggestions ii) one who can both  post and comment on the site. As this project is only for the students of North south University so in the authentication system people without having a nsu email cannot open an account. Also the users who can post about health related issues will be needed to verify themselves first that they can actually give suggestions. In the website there will be two part, one part is for various health related suggestion posts, and another one will be for health related problems solution seeking part where people can ask any medical help via post(ex: asking a famous doctors number, which doctor is good for a specific disease ETC.)
+The main idea of the project is to generate as many test cases as possible to test as many features as possible. Since I was given a timeframe of 4 weeks to complete the project as well as learn the use of Selenium.
 
-Also the website will have another part called nearest hospitals, where all the information about the nearest and popular hospital among Dhaka city will be given. This whole project will be created using Django framework and front pages will be created using HTML, CSS, Bootstrap.
 
-Type of platform:
-For this project we want to create a web based app where people can log into that app and use that web app as their need.
 
 **Technology:**
 
-    - Frontend: HTML, CSS, BOOTSTRAP
-    - Backend: DJANGO
+    - Selenium Webdriver
+    - Java
+    - Mozilla Firefox
 
-**Features:**
+**Snapshots**
 
-These features will be available on the webapp:
+	<img src="https://imgur.com/a/C7K7YTc">
+	<img src="https://imgur.com/a/CJjJVTZ">
+	<img src="https://imgur.com/a/xiSEcqx">
 
-    - Special kind authentication
-    - kind of users
-    - Health related post menu
-    - Q/A related post menu
-    - Nearest hospitals list
+**Description**
 
-**Future business plan:**
+We tested the following features of the website
 
-In future we want to develop this app with some more features. We will add some verified doctors to our webapp who will be available 24/7 to answer any kind of health related issues or can help with any emergency situation instantly. We will also add a feature like online appointment, where users can set their appointment with doctors via online. We will an option like anonymous post, where premium users can post about their problems anonymously without any hesitation. But to use these feature we will cost them in a yearly basis like 300/= taka every year and they have to pay this amount via bkash/Rocket/Ucash to have a premium account. Procedure for giving the yearly fees will also be given on the website with clear instructions.
+	- Load
+	- Login
+	- SignUp
+	- Booking Confirmation
+	- Remove a booking (admin side)
 
-We will also add online medicine shopping option where they can buy some common medicines (which do not need prescription to buy) from our webapp.
+**Packages Used**
+
+	- selenium-server-standalone-3.141.59.jar
+	- client-combined-3.141.59.jar
+	- client-combined-3.141.59-sources.jar
+	- geckodriver.exe
+	- FireFox.exe
+
+**Testing Description**
+
+I tested the load capability of the website and generated a test case to test if the website loads properly. Since it is a demo website, some features of it might be missing. so, tested the part. For the next part of testing I decided to test the login fucntions. Since a website like this cannot work without having a proper database and backend codes to log a user in. so, that was the secondary test. other tests I did included SignUp Test , Booking Test and for backend testing I tested the delete booking features.
