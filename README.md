@@ -39,7 +39,7 @@ Selenium is a testing library through which unit testing of websites can be done
 
 **Project Idea:**
 
-The main idea of the project is to generate as many test cases as possible to test as many features as possible. Since we were given a timeframe of 4 weeks to complete the project as well as learn the use of Selenium.
+The main idea of the project is to generate as many test cases as possible to test as many features as possible. Since I was given a timeframe of 4 weeks to complete the project as well as learn the use of Selenium.
 
 
 
@@ -55,4 +55,25 @@ The main idea of the project is to generate as many test cases as possible to te
 	<img src="https://imgur.com/a/CJjJVTZ">
 	<img src="https://imgur.com/a/xiSEcqx">
 
+**Description**
+
+We tested the following features of the website
+
+	- Load
+	- Login
+	- SignUp
+	- Booking Confirmation
+	- Remove a booking (admin side)
+
+**Packages Used**
+
+	- selenium-server-standalone-3.141.59.jar
+	- client-combined-3.141.59.jar
+	- client-combined-3.141.59-sources.jar
+	- geckodriver.exe
+	- FireFox.exe
+
+**Testing Description**
+
+I tested the load capability of the website and generated a test case to test if the website loads properly. Since it is a demo website, some features of it might be missing. so, tested the part. For the next part of testing I decided to test the login fucntions. Since a website like this cannot work without having a proper database and backend codes to log a user in. so, that was the secondary test. other tests I did included SignUp Test , Booking Test and for backend testing I tested the delete booking features.
 
